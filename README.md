@@ -22,7 +22,13 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```bash
+cd /bin
+```
+
+```ruby
+bundle exec flycua-craw
+```
 
 ## Development
 
