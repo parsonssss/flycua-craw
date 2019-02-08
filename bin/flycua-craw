@@ -1,0 +1,8 @@
+#!/usr/bin/env ruby
+
+require_relative '../config/environment'
+
+crawer = Flycua::Crawer::PriceCrawer.new
+crawer.start
+price_calendar = crawer.show_calendar
+Flycua::Memail.send_ticket_price(price_calendar)
