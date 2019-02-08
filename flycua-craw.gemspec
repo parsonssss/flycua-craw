@@ -38,6 +38,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "http"
   spec.add_development_dependency "json"
   spec.add_development_dependency "sendgrid-ruby"
+  spec.add_development_dependency "whenever"
 
 
 
