@@ -14,7 +14,8 @@ module Flycua
             #return many item like this {"day"=>"2019-03-23", "price"=>"448", "week"=>"星期六"} in a Array
             marshal_data = resp.to_s
             price_json_data = JSON.parse(marshal_data)
-            price_json_data["priceCalenders"][0]["priceCalenderBos"].delete_if {|item| item["price"] == '-' }
+            #price_json_data["priceCalenders"][0]["priceCalenderBos"].delete_if {|item| item["price"] == '-' }
+            price_json_data.fetch("priceCalenders",[{}])[0].fetch("priceCalenderBos",[]).delete_if {|item| item["price"] == '-' }
         end
 
     end

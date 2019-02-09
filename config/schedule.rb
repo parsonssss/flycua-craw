@@ -18,7 +18,7 @@ set :output, "/var/log/cron_log.log"
 # end
 
 # Learn more: http://github.com/javan/whenever
-every 1.minute do
+every 1.day do
     command "/root/github/flycua-craw/bin/start.sh"
 end
 

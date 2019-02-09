@@ -9,6 +9,8 @@ module Flycua
             def craw_price
                 _json_data = get_price_json_data_with(@today)
                 @price_calendar = parse_json_data(_json_data)
+                raise "craw error" if Flycua::Utils.isNil?(@price_calendar)
+                @price_calendar
             end
 
             def serialization_of_price_calendar
