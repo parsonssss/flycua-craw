@@ -2,6 +2,7 @@ module Flycua
     module Crawer
         class PriceCrawer
             include Flycua::Craw
+            include Flycua::Utils
             def initialize
                 @today =  Flycua::Mtime.get_time
             end

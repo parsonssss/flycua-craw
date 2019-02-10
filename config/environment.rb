@@ -3,4 +3,5 @@ Bundler.require
 
 require 'yaml'
 
-require_all '../lib'
+require_relative '../lib/flycua/craw/util.rb'
+require_all '../lib/flycua/craw/'
