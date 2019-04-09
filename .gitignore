@@ -8,6 +8,7 @@
 /spec/reports/
 /tmp/
 sendgrid.env
+*.swp
 
 # rspec failure tracking
 .rspec_status

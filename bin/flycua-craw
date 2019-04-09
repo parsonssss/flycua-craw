@@ -5,7 +5,7 @@ require 'pry'
 
 crawer = Flycua::Crawer::PriceCrawer.new
 crawer.start
-`/root/github/flycua-craw/bin/diff.sh`
+`~/github/flycua-craw/bin/diff.sh`
 price_diff = Flycua::Diff.getDiffPrice
 price_calendar = crawer.show_calendar
 Flycua::Memail.send_ticket_price(price_calendar,price_diff)
